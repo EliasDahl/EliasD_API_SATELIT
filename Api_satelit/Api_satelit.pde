@@ -11,7 +11,7 @@ float sat1Lon, sat1Lat,sat1Alt;
 float sat2Lon,sat2Lat,sat2Alt;
 float sat3Lon,sat3Lat,sat3Alt;
 float sat4Lon,sat4Lat,sat4Alt;
-float angle2;
+//float angle2;
 void setup()
 {
   size(1000,1000,P3D);
@@ -65,14 +65,14 @@ void draw()
 {
   background(15,15,40);
     textSize(50);
-  text("Rotate: WASD",20,60);
+  text("Rotate: A/D",20,60);
   translate(width*0.5, height*0.5);
   rotateY(angle);
   if(keyPressed){if(key=='d'){angle+=0.01;}}
   if(keyPressed){if(key=='a'){angle-=0.01;}}
-  rotateX(angle2);
+  /*rotateX(angle2);
   if(keyPressed){if(key=='s'){angle2-=0.01;}}
-  if(keyPressed){if(key=='w'){angle2+=0.01;}}
+  if(keyPressed){if(key=='w'){angle2+=0.01;}}*/
   lights();
   fill(255);
   noStroke();
